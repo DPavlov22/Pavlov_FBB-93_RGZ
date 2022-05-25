@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Кашина Дарья, Шурлакова Виктория. Лабораторные по курсу "Интернет-программирование"</title>
+        <link rel="stylesheet" href="main.css">
+        <script src="script.js"></script>
+        <script>
+           
+        </script>
+    </head>
+
+    <body onload="loaded()">
+        <header>
+            <div class="info"> ООО "Тише едешь-дальше будешь"<br>
+                <span onclick="F3()">Время работы: пн-пт 9:00-23:00</span><br>
+                Телефон 271-74-87<br>
+                <span onclick="F1()">Адрес: г.Новосибирск, Коммунистическая 21</span><br></div>
+
+            
+            <h1><span onclick="F2()">Маркет. Автотовары</span></h1>
+        </header>
+       
+        <nav class ="main-menu">
+            <ul></ul>
+            <div class ="searchbox">
+                <input type="search" placeholder="поиск по товарам" id="search">
+                <button onclick="search()">&#x1F50E;</button>
+            </div>
+        </nav>
+            <div class="card">
+                <a href="product.html">
+                    <div class="image"><p><img src="koleso.jpg"alt=""
+                        onmouseout="this.src='koleso.jpg'"
+                        onmouseover="this.src='koleso2.jpg'"></p></div>
+                    <div class="product-name">Колесо переднее</div>
+                    <div class="price">8500 &#8381;</div> 
+                </a>
+
+            </div>
+            <div class="card">
+                <a href="product1.html">
+                    <div class="image"><p><img src="dv.jpg"alt=""
+                        onmouseout="this.src='dv.jpg'"
+                        onmouseover="this.src='dv2.jpg'"></p></div>
+                    <div class="product-name">Дворники</div>
+                    <div class="price">1000 &#8381;</div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="product2.html">
+                    <div class="image"><p><img src="magnitola.jpg"alt=""
+                        onmouseout="this.src='magnitola.jpg'"
+                        onmouseover="this.src='m1.jpg'"></p></div>
+                    <div class="product-name">Магнитола</div>
+                    <div class="price">5000 &#8381;</div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="product3.html">
+                    <div class="image"><img src="elka.jpg"></div>
+                    <div class="product-name">Елочка-вонючка</div>
+                    <div class="price">368 &#8381;</div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="product4.html">
+                    <div class="image"><img src="n1.jpg"></div>
+                    <div class="product-name">Стильные наклеечки</div>
+                    <div class="price">Бесценно</div>
+                </a>
+            </div>
+        
+        <footer>
+            &copy; Lychshii magazin avtotovarov!<br>
+          Copyright Kashina Daria, Shurlakova Victoria<br>
+          Avtotovary@gmail.com
+        </footer>
+
+        <div class="overlay" onclick="hideModal()"></div>
+        <div class="modal">
+            <div class="message"></div>
+            <button onclick="hideModal()"></button>
+        </div>
+    </body>
+</html>
