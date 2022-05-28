@@ -8,7 +8,8 @@ function showModal(messageText, buttonText) {
     modal.style.top ='200px';
     modal.style.transform = 'scale(1.5)';
 
-    // let message = modal.getElementsByClassName('message')[0];
+
+    let message = modal.getElementsByClassName('message')[0];
     message.innerHTML = messageText;
     let button = modal.getElementsByTagName('button')[0];
     button.innerHTML = buttonText;
